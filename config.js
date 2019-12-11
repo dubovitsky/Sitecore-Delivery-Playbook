@@ -15,7 +15,7 @@ const config = {
 			{ "text": "", "link": ""}
 		],
 		"search": {
-			"enabled": true,
+			"enabled": false,
 			"indexName": "learn-hasura-test",
 			"algoliaAppId": process.env.GATSBY_ALGOLIA_APP_ID,
 			"algoliaSearchKey": process.env.GATSBY_ALGOLIA_SEARCH_KEY,

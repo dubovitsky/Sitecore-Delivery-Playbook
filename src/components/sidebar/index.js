@@ -27,7 +27,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
     position: relative;
 
     &:hover {
-      color: rgb(116, 76, 188) !important;
+      color: rgb(92, 19, 13) !important;
     }
 
     ${props =>
@@ -59,18 +59,19 @@ const Sidebar = styled('aside')`
   position: sticky;
   top: 0;
   padding-right: 0;
-  background-color: #372476;
+  background-color: #ee3524;
   /* Safari 4-5, Chrome 1-9 */
-  background: linear-gradient(#372476, #3b173b);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#372476), to(#3b173b));
+  background: linear-gradient(#ee3524, #5c130d);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ee3524), to(#5c130d));
   /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(top, #372476, #3b173b);
+  background: -webkit-linear-gradient(top, #ee3524, #5c130d);
   /* Firefox 3.6+ */
-  background: -moz-linear-gradient(top, #372476, #3b173b);
+  background: -moz-linear-gradient(top, #ee3524, #5c130d);
   /* IE 10 */
-  background: -ms-linear-gradient(top, #372476, #3b173b);
+  background: -ms-linear-gradient(top, #ee3524, #5c130d);
   /* Opera 11.10+ */
-  background: -o-linear-gradient(top, #372476, #3b173b);
+  background: -o-linear-gradient(top, #ee3524, #5c130d);
+  z-index: 999;
 
   @media only screen and (max-width: 1023px) {
     width: 100%;
@@ -83,8 +84,8 @@ const Sidebar = styled('aside')`
   }
   @media only screen and (max-width: 767px) {
     padding-left: 0px;
-    background-color: #372476;
-    background: #372476;
+    background-color: #ee3524;
+    background: #ee3524;
     height: auto;
   }
 `;

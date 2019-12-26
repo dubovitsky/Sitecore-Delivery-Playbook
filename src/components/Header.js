@@ -42,7 +42,7 @@ const Header = ({location}) => (
         }
         `}
     render={(data) => {
-      const logoImg = require('./images/logo.svg');
+      const logoImg = require('./images/sitecore-logo-white.svg');
       const twitter = require('./images/twitter.svg');
       const {
         site: {

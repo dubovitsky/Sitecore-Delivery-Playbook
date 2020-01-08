@@ -24,14 +24,14 @@ const config = {
   },
   "sidebar": {
     "forcedNavOrder": [
-      "/introduction",
-      // "/codeblock"
+      "/",
+      "/development"
     ],
     "links": [
       { "text": "Sitecore", "link": "https://www.sitecore.com/" },
     ],
     "frontline": true,
-    "ignoreIndex": true,
+    "ignoreIndex": false,
   },
   "siteMetadata": {
     "title": "Sitecore Delivery Playbook | Dubovitsky",

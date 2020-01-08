@@ -1,3 +1,8 @@
 [build]
   publish = "public"
   command = "npm run build"
+[[redirects]]
+  from = "https://dubovitsky.com"
+  to = "https://sitecore.dubovitsky.com"
+  status = 302
+  force = true

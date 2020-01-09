@@ -1,6 +1,6 @@
 ---
 title: "Branching Strategy"
-metaTitle: "Branching strategy used on a Sitecore project"
+metaTitle: "Branching strategy on Sitecore projects"
 metaDescription: ""
 attachments:
   - "./src/components/images/gitflow.png"

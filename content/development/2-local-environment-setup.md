@@ -9,5 +9,5 @@ metaDescription: "The document describes how the setup of a local environment is
 * Requirements
 * Prerequisites
 * Installation Steps
-* Useful tips
 * Known Issues and fixes
+* Useful tips

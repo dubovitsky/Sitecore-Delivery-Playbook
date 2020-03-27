@@ -296,6 +296,11 @@ pre {
   font-weight: 400;
 }
 
+
+.mainWrapper ul ul {
+  margin: 0;
+}
+
 /* Header section ends here */
 .headerNav {
   font-family: 'Roboto';

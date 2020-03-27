@@ -4,10 +4,12 @@ metaTitle: "Local Environment Setup"
 metaDescription: "The document describes how the setup of a local environment is defined on Sitecore project."
 ---
 
-`README.md` file contains all the details to setup local environment from the scratch and placed in your repository's root. The document covers the following topics:
+It's important to have as fast as possible process of local environment installation. A developer should have possibility to spin up local environment based on guidelines provided in `README.md` file.
 
-* Requirements
+`README.md` file contains all the details to setup local environment from the scratch and it's placed inside repository's root. The document covers the following topics:
+
 * Prerequisites
+* Requirements
 * Installation Steps
-* Known Issues and fixes
+* Known issues and fixes
 * Useful tips

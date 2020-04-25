@@ -8,7 +8,7 @@ The following Sitecore Data Structure was proposed:
 ```
 * Content
   * Home
-  * YOURSITE
+  * Yoursite
     * Home
       * Login
       * Registration
@@ -22,11 +22,27 @@ The following Sitecore Data Structure was proposed:
       * Login
       * Registration
       * ...
+* ...
+* Layout
+  * Yoursite
+    * Foundation
+    * Feature
+    * Project
+* Media Library
+  * Yoursite
+    * Foundation
+    * Feature
+    * Project
+* Templates
+  * Yoursite
+    * Foundation
+    * Feature
+    * Project
 ```
-**Content / YOURSITE / Home** item contains only pages that are accessible for users.
+**Content / Yoursite / Home** item contains only pages that are accessible for users.
 
-**Content / YOURSITE / Data** item contains data source items for componentns e.g. Navigation or any other reusable component.
+**Content / Yoursite / Data** item contains data source items for componentns e.g. Navigation or any other reusable component.
 
-**Content / YOURSITE / Data / Dictionary** item contains dictionary items in Sitecore.
+**Content / Yoursite / Data / Dictionary** item contains dictionary items in Sitecore.
 
-**Content / YOURSITE / Settings** item contains configuration
+**Content / Yoursite / Settings** item contains configuration

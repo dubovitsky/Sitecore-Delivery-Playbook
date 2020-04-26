@@ -37,12 +37,14 @@ GitFlow is taken as a basis for the branching strategy. However, a few modificat
 
 * Active development happening in `develop`
 * Commits should not be pushed directly to permanent or long-running branches at any time. Update of those branched is happening via `merge` (`squash`) of a `feature`/`bugfix`/`hotfix` branch.
-* `feature` and `bugfix` branches are created for tickets (User Stories or Bugs) that will be deployed individually. Not for Task issue types.
+* `feature` and `bugfix` branches are created for tickets (User Stories or Bugs) that will be deployed individually.
 * PR should be merged into `develop` or corresponding `release` branch in case of `hotfixes`
 * PR for `feature` or `bugfix` branches are merged via `squash` and `rebase` to keep history clean and digestible.
 * `feature`/`bugfix`/`hotfix` branch should be removed after PR is merged.
 * Once something is merged into the `release` branch, this `release` branch should be merged in all higher `release/*` and `develop`.
-* Once `release/*` branch is created, any changes in this branch should be made with PR from `bugfix/*` or `hotfix/*` branches. **PR from `develop` branch to `release/\*` is prohibited!**
+* Once `release/*` branch is created, any changes in this branch should be made with PR from `bugfix/*` or `hotfix/*` branches. **⚡ PR from `develop` branch to `release/*` is prohibited!**
+
+**⚠️ Note:** There is a risk of associating a `feature` branch with a User Story. Some components may contain UI elements or functionality common for other User Stories. If such User Stories should be delivered in parallel, it's allowed to create a `feature` branch that related only to this part of the functionality. In this case a `feature` branch is considered as **technical** and should be ignored by QA team. This approach allows you quickly unblock the team and increase the overall velocity.
 
 ## Branching and Artifacts Management
 
@@ -81,7 +83,7 @@ Branching strategy should reflect development process. Following steps describe 
 * Sprint Review (demo) is happening in `QA` and a decision to promote to `STG` follows the demo.
 * Release to `PROD` is done after all validation in `STG` are passed and business approval received.
 
-The picture below show how branches are mapped to sprints.
+The picture below shows how branches are mapped to sprints.
 
 ![Mapping to Agile Development Process](/images/branching-strategy-mapping-to-agile-development-process.png)
 
@@ -99,7 +101,7 @@ culture, a workflow should also complement business culture and release strategy
 
 * GitFlow assumes release turn around cycle is fast and there is only one production version at any point of time. It is common situations when **different releases are deployed to different environments**.
 * Current DevOps process does not designate specific branch to every environment but rather use artifacts storage for release artifacts. This means that release is created once and has a separate workflow from GIT at that point. It can be multiple times or in different environments. It is important to mention that the release artifact should have meta-information about its origin (branch, commit, version). **Merge to master after release generates different commit hash** and complicates further identification of a code change.
-* Any change to a code base suppose to pass code review (via PR) this mean that no changes should be made directly to release or develop branch. **Code review is not addressed in GitFlow** at all.
+* Any change to a code base supposed to pass code review (via PR) this mean that no changes should be made directly to release or develop branch. **Code review is not addressed in GitFlow** at all.
 * Tagging on a master branch (especially with merge commits) doesn't allow to identify current working version in other branches.
 * GitFlow assumed that source control is used for release management, which might be right for smaller projects. However, in Toyota, **there are dedicated tools to track the release process**. Git is used only for a source code management.
 Multiple release branches
@@ -132,7 +134,7 @@ No branched should be created directly from the master, as this branch is only f
 
 ![Hotfix & bugfix branches](/images/branching-strategy-hotfix-and-bugfix-branches.png)
 
-Both hotfix and bugfix branches are merged into a branch from were they where originated, then a release change propagation should be used afterward.
+Both hotfix and bugfix branches are merged into a branch from where they were originated, then a release change propagation should be used afterward.
 
 ### Release change propagation
 

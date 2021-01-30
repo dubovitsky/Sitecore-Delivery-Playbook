@@ -29,6 +29,7 @@ const config = {
     ],
     "links": [
       { "text": "Sitecore", "link": "https://www.sitecore.com/" },
+      { "text": "LinkedIn Profile", "link": "https://www.linkedin.com/in/vadim-dubovitsky/" },
     ],
     "frontline": true,
     "ignoreIndex": false,
